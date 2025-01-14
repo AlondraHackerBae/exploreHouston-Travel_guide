@@ -1,4 +1,5 @@
 body {
+    background-color: #272044;
     font-family: "Poppins", serif;
 }
 
@@ -9,7 +10,15 @@ body {
 .grid {
     display: grid;
     grid-gap: 64px;
+}
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
     grid-template-columns: 1fr 2fr 2fr;
+}
+.img-responsive {
+    max-width: 100%;
 }
 
 header {
@@ -54,16 +63,44 @@ header a {
     text-decoration: none;
     text-transform: uppercase;
 }
+main {
+    background-color: white;
+}
+main h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    margin: 0;
+    opacity: 0.3;
+    text-align: left;
+    text-transform: uppercase;
+}
+main h3 {
+    color: #272044;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+}
+main p {
+    color: #272044;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: 0.7;
+}
 section {
     margin: 0 auto;
     max-width: 1200px;
+    padding: 100px 0;
 }
 footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/be-someone.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    padding: 100px 0;
 }
 footer h3 {
     font-size: 20px;
@@ -76,7 +113,7 @@ footer p {
     line-height: 24px;
     opacity: 0.7;
 }
-fotter ul {
+footer ul {
     padding: 0;
 }
 footer li {
@@ -99,5 +136,15 @@ footer a {
     }
     header h2 {
         font-size: 20px;
+    }
+    header h3 {
+        font-size: 12px;
+    }
+    section {
+        padding: 30px;
+    }
+    .grid {
+        grid-gap: 30px;
+        grid-template-columns: 1fr;  
     }
 }
